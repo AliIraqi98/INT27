@@ -1,0 +1,14 @@
+<div class="layout-sidebar" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+    <div class="sidebar-header">
+        <a [routerLink]="['/']" class="app-logo">
+            <div class="text-center">
+                <img class="h-auto w-6" src="../../assets/sample-data/montvieux_logo_high_res.jpg" alt="Image" >
+            </div>
+        </a>
+        <button class="layout-sidebar-anchor p-link z-2 mb-2" type="button" (click)="anchor()"></button>
+    </div>
+
+    <div #menuContainer class="layout-menu-container">
+        <app-menu></app-menu>
+    </div>
+</div>

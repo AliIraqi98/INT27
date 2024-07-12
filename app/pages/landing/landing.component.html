@@ -1,0 +1,33 @@
+<div class="card">
+    <div class="text-center mb-4">
+        <img class="h-auto w-6" src="../../../assets/sample-data/angularjs.png" alt="Image" >
+    </div>
+    <div class="flex justify-content-between flex-column-reverse md:flex-row align-items-center">
+        <div>
+            <div class="text-2xl text-900 mb-4 mt-4 md:mt-0 text-center md:text-left font-semibold md:pr-4">
+                <span *ngIf="landingText">{{landingText.title}}</span>
+                <span *ngIf="!landingText"><app-skeleton-info-box-single></app-skeleton-info-box-single></span>
+            </div>
+        </div>
+    </div>
+    <div class="text-xl text-900 mb-4 font-semibold">
+        <span *ngIf="landingText">{{landingText.subtitle}}</span>
+        <span *ngIf="!landingText"><app-skeleton-info-box-single></app-skeleton-info-box-single></span>
+    </div>
+    <p class="line-height-3 text-lg mb-4">
+        <span *ngIf="landingText">{{landingText.main}}</span>
+        <span *ngIf="!landingText"><app-skeleton-info-box-single></app-skeleton-info-box-single></span>
+    </p>
+</div>
+<div class="card">
+    <div class="flex justify-content-between flex-column-reverse md:flex-row align-items-center">
+        <div>
+            <div class="text-xl text-900 mb-4 mt-4 md:mt-0 text-center md:text-left font-semibold md:pr-4">
+                More information ...
+            </div>
+        </div>
+    </div>
+    <p class="line-height-3 text-lg mb-4 font-semibold">
+        <a target="_blank" >Project README is here</a>
+    </p>
+</div>
